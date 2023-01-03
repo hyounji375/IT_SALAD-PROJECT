@@ -1,5 +1,5 @@
 const bar = document.getElementById("bar");
-const hidemenu = document.querySelector(".hide_menu");
+const hidemenu = document.querySelector(".hidemenu");
 
 bar.addEventListener("click", () => {
   if (hidemenu.classList.contains("on")) {
