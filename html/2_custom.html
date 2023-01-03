@@ -37,7 +37,6 @@
             <li><a href="./2_sandwich.html">SANDWICH</a></li>
             <li><a href="./2_yogurt.html">YOGURT</a></li>
             <li><a href="./2_soup&side.html">SOUP & SIDE</a></li>
-            <li><a href="./2_soup&side.html">SOUP & SIDE</a></li>
             <li><a href="./2_beverage.html">BEVERAGE</a></li>
             <li><a href="./2_custom.html">CUSTOM</a></li>
           </ul>
@@ -642,18 +641,18 @@
 
     <script>
       function Calculator() {
-        let total = Number(document.getElementById('total').defaultValue)
+        let total = Number(document.getElementById("total").defaultValue);
         for (let i = 1; i <= 36; i++) {
-          let chkbox = document.getElementById('price' + i)
+          let chkbox = document.getElementById("price" + i);
           if (chkbox.checked) {
-            total += Number(chkbox.value)
+            total += Number(chkbox.value);
           }
-          document.getElementById('total').value = total
+          document.getElementById("total").value = total;
         }
       }
       for (let i = 1; i <= 36; i++) {
-        let check = document.getElementById('price' + i)
-        check.onclick = Calculator
+        let check = document.getElementById("price" + i);
+        check.onclick = Calculator;
       }
     </script>
     <script src="../js/search.js"></script>
